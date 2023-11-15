@@ -58,7 +58,7 @@ public:
   }
   void detect_edges(cv::Mat img)
   {
-
+	  
    	cv::Mat src, src_gray;
 	cv::Mat dst, detected_edges;
 
