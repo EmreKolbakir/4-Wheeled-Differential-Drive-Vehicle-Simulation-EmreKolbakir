@@ -15,8 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   controller_manager
   cv_bridge 
   image_transport 
- 	
- 
+  gazebo_ros_control
 )
 
 find_package(OpenCV REQUIRED)
@@ -29,6 +28,5 @@ include_directories(
 )
 
 add_executable(image_converter src/image_converter.cpp)
-
 target_link_libraries(image_converter ${catkin_LIBRARIES} ${OpenCV_LIBS})
 
